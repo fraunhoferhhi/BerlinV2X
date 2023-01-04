@@ -1,0 +1,12 @@
+###### Requirements for Mobile Insight ######
+pyserial
+crcmod
+xmltodict
+
+###### Further requirements for parsing ######
+pandas
+pyarrow
+numpy
+scipy
+tqdm
+

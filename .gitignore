@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Project-specific
+
+plots/**/*.pdf
+plots/**/*.png
+data/

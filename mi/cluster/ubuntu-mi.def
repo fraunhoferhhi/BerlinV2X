@@ -1,0 +1,47 @@
+Bootstrap: docker
+From: ubuntu:20.04
+
+%environment
+
+    export PROJ_ROOT="/mnt/project"
+    export PYTHONPATH=$PROJ_ROOT
+
+%files
+    ./cluster/requirements.txt /opt/requirements.txt
+
+%post 
+ 
+    apt update -y
+
+    apt dist-upgrade -y
+
+    apt install wget -y
+    apt install bzip2 -y
+    apt install sudo -y
+
+    # Pre-install these MI-dependencies in non-interactive mode to avoid hanging later
+    DEBIAN_FRONTEND=noninteractive TZ="Europe/Berlin" apt install tzdata -y
+    DEBIAN_FRONTEND=noninteractive apt install keyboard-configuration -y
+
+    apt install python3-pip -y
+    apt install python-is-python3
+
+    pip install -r /opt/requirements.txt
+    wget  https://github.com/mobile-insight/mobileinsight-core/releases/download/v6.0.0/MobileInsight-6.0.0.tar.gz -O mi.tar.gz
+    #wget https://github.com/mobile-insight/mobileinsight-core/releases/download/v.5.0.0/v5.0.0.tar.gz -O mi.tar.gz
+
+    tar -zxvf mi.tar.gz
+    rm mi.tar.gz
+
+    cd MobileInsight-6.0.0	
+    #cd mobileinsight-core
+    ./install-ubuntu.sh
+    cd ..
+
+    rm -rf MobileInsight-6.0.0/ # mobileinsight-core/
+
+%runscript
+
+    cd ${PROJ_ROOT} || exit
+
+    python "$@"

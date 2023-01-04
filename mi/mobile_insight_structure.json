@@ -1,0 +1,1427 @@
+{
+  "LTE_MAC_Configuration": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "Subpackets": [
+      {
+        "SubPacket ID": "str",
+        "Version": "int",
+        "SubPacket Size": "int",
+        "Config reason": "str"
+      }
+    ]
+  },
+  "LTE_MAC_DL_Transport_Block": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "Subpackets": [
+      {
+        "SubPacket ID": "str",
+        "Version": "int",
+        "SubPacket Size": "int",
+        "Num Samples": "int",
+        "Samples": [
+          {
+            "Sub-FN": "int",
+            "SFN": "int",
+            "RNTI Type": "str",
+            "HARQ ID": "int",
+            "Area ID": "int",
+            "PMCH ID": "int",
+            "DL TBS (bytes)": "int",
+            "RLC PDUs": "int",
+            "Padding (bytes)": "int",
+            "HDR LEN": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_MAC_Rach_Attempt": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of Subpackets": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Retx counter": "int",
+        "Rach result": "str",
+        "Contention procedure": "str",
+        "Rach msg bmasks": "int",
+        "Msg1": {
+          "Preamble Index": "int",
+          "Preamble index mask": "str",
+          "Preamble power offset": "int"
+        },
+        "Msg2": {
+          "Backoff Value (ms)": "int",
+          "Result": "str",
+          "TCRNTI": "int",
+          "TA value": "int"
+        },
+        "Msg3": {
+          "Grant Raw": "str",
+          "Grant": "int",
+          "Harq ID": "int",
+          "MAC PDUs": [
+            {
+              "MAC PDU": "str"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "LTE_MAC_Rach_Trigger": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of Subpackets": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Preamble initial power (dB)": "int",
+        "Power ramping step (dB)": "int",
+        "RA index1": "int",
+        "RA index2": "int",
+        "Preamble trans max": "int",
+        "Contention resolution timer (ms)": "int",
+        "Message size Group_A": "int",
+        "Power offset Group_B": "int",
+        "PMax (dBm)": "int",
+        "Delta preamble Msg3": "int",
+        "PRACH config": "int",
+        "CS zone length": "int",
+        "Root seq index": "int",
+        "PRACH Freq Offset": "int",
+        "Preamble Format": "int",
+        "High speed flag": "int",
+        "Max retx Msg3": "int",
+        "RA rsp win size": "int"
+      }
+    ]
+  },
+  "LTE_MAC_UL_Buffer_Status_Internal": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "Subpackets": [
+      {
+        "SubPacket ID": "str",
+        "Version": "int",
+        "SubPacket Size": "int",
+        "Num Samples": "int",
+        "Samples": [
+          {
+            "Sub FN": "int",
+            "Sys FN": "int",
+            "Number of active LCID": "int",
+            "LCIDs": [
+              {
+                "Ld Id": "int",
+                "Priority": "int",
+                "New bytes": "int",
+                "Retx bytes": "int",
+                "Ctrl bytes": "int"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_MAC_UL_Transport_Block": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "Subpackets": [
+      {
+        "SubPacket ID": "str",
+        "Version": "int",
+        "SubPacket Size": "int",
+        "Num Samples": "int",
+        "Samples": [
+          {
+            "HARQ ID": "int",
+            "RNTI Type": "str",
+            "Sub-FN": "int",
+            "SFN": "int",
+            "Grant (bytes)": "int",
+            "RLC PDUs": "int",
+            "Padding (bytes)": "int",
+            "BSR event": "str",
+            "BSR trig": "str",
+            "HDR LEN": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_MAC_UL_Tx_Statistics": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "Subpackets": [
+      {
+        "SubPacket ID": "str",
+        "Version": "int",
+        "SubPacket Size": "int",
+        "Sample": {
+          "Number of samples": "int",
+          "Number of padding BSR": "int",
+          "Number of regular BSR": "int",
+          "Number of periodic BSR": "int",
+          "Number of cancel BSR": "int",
+          "Grant received": "int",
+          "Grant utilized": "int"
+        }
+      }
+    ]
+  },
+  "LTE_NAS_EMM_OTA_Incoming_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Pkt Version": "int",
+    "RRC Release Number": "int",
+    "Major Version": "int",
+    "Minor Version": "int",
+    "Msg": "str"
+  },
+  "LTE_NAS_EMM_OTA_Outgoing_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Pkt Version": "int",
+    "RRC Release Number": "int",
+    "Major Version": "int",
+    "Minor Version": "int",
+    "Msg": "str"
+  },
+  "LTE_NAS_EMM_State": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "EMM State": "str",
+    "EMM Substate": "str",
+    "PLMN": "str",
+    "GUTI Valid": "int",
+    "GUTI UE Id": "int",
+    "GUTI PLMN": "str",
+    "GUTI MME Group ID": "str",
+    "GUTI MME Code": "str",
+    "GUTI M-TMSI": "str"
+  },
+  "LTE_NAS_ESM_OTA_Incoming_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Pkt Version": "int",
+    "RRC Release Number": "int",
+    "Major Version": "int",
+    "Minor Version": "int",
+    "Msg": "str"
+  },
+  "LTE_NAS_ESM_OTA_Outgoing_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Pkt Version": "int",
+    "RRC Release Number": "int",
+    "Major Version": "int",
+    "Minor Version": "int",
+    "Msg": "str"
+  },
+  "LTE_NAS_ESM_State": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "EPS bearer type": "int",
+    "EPS bearer ID": "int",
+    "EPS bearer state": "int",
+    "Len": "int",
+    "QCI": "int",
+    "UL MBR": "int",
+    "DL MBR": "int",
+    "UL GBR": "int",
+    "DL GBR": "int",
+    "UL MBR ext": "int",
+    "DL MBR ext": "int",
+    "UL GBR ext": "int",
+    "DL GBR ext": "int"
+  },
+  "LTE_PDCP_DL_Cipher_Data_PDU": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkts": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "SRB Cipher Algorithm": "str",
+        "DRB Cipher Algorithm": "str",
+        "Num PDUs": "int",
+        "PDCPDL CIPH DATA": [
+          {
+            "Cfg Idx": "int",
+            "Mode": "str",
+            "SN Length": "str",
+            "Bearer ID": "int",
+            "Valid PDU": "str",
+            "PDU Size": "int",
+            "Logged Bytes": "int",
+            "Sub FN": "int",
+            "Sys FN": "int",
+            "SN": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PDCP_DL_Config": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Reason": "str",
+        "SRB Cipher Algorithm": "str",
+        "SRB Cipher Key Idx": "int",
+        "SRB Integrity Algorithm": "str",
+        "SRB Integrity Key Idx": "int",
+        "DRB Cipher Algorithm": "str",
+        "DRB Cipher Key Idx": "int",
+        "Array size": "int",
+        "Number of Released RBs": "int",
+        "Released RBs": [
+          {
+            "Released RB Cfg Index": "int"
+          }
+        ],
+        "Number of Added/Modified RBs": "int",
+        "Added/Modified RBs": "list",
+        "Number of active RBs": "int",
+        "Active RBs": "list"
+      }
+    ]
+  },
+  "LTE_PDCP_DL_Ctrl_PDU": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "RB Cfg Idx": "int",
+        "Mode": "str",
+        "SN Length (bit)": "int",
+        "Num PDUs": "int",
+        "PDCP DL Ctrl PDU": [
+          {
+            "PDU Size": "int",
+            "Logged Bytes": "int",
+            "System Frame Number": "int",
+            "Subframe Number": "int",
+            "type": "str",
+            "fms": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PDCP_DL_SRB_Integrity_Data_PDU": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "PDU Size": "int",
+    "Msg": "str"
+  },
+  "LTE_PDCP_DL_Stats": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Num RBs": "int",
+        "Num Errors": "int",
+        "Num Offload Q Full Count": "int",
+        "Num Packet Dropped Offload Q Full": "int",
+        "RBs": [
+          {
+            "Rb Cfg Idx": "int",
+            "Mode": "str",
+            "PDCP Hdr Len": "int",
+            "Num RST": "int",
+            "Num Flow Ctrl Trigger": "int",
+            "Num Data PDU Rx": "int",
+            "Num Data PDU Rx Bytes": "int",
+            "Control PDU Bytes Rx": "int",
+            "Num Control PDU Gen": "int",
+            "Num Control PDU Gen Bytes": "int",
+            "Num Stat Rprt Ctrl PDU Rx": "int",
+            "Num ROHC Ctrl PDU Rx": "int",
+            "Num PDU ROHC Fail": "int",
+            "Num PDU Integrity Fail": "int",
+            "Num Missing SDU To UL": "int",
+            "Num Missing SDU From UL": "int",
+            "Num PDU Dups": "int",
+            "Num PDU Dups Bytes": "int",
+            "Num PDU Out of Win": "int",
+            "Num PDU Out of Win Bytes": "int",
+            "Num PDU Invalid": "int",
+            "Num PDU Invalid Bytes": "int",
+            "Num Flow Ctrl Trigger Rst": "int",
+            "Num Data PDU Rx Rst": "int",
+            "Num Data PDU Rx Bytes Rst": "int",
+            "Control PDU Bytes Rx Rst": "int",
+            "Num Control PDU Gen Rst": "int",
+            "Num Control PDU Gen Bytes Rst": "int",
+            "Num Stat Rprt Ctrl PDU Rx Rst": "int",
+            "Num ROHC Ctrl PDU Rx Rst": "int",
+            "Num PDU ROHC Fail Rst": "int",
+            "Num PDU Integrity Fail Rst": "int",
+            "Num Missing SDU To UL Rst": "int",
+            "Num Missing SDU From UL Rst": "int",
+            "Num PDU Dups Rst": "int",
+            "Num PDU Dups Bytes Rst": "int",
+            "Num PDU Out of Win Rst": "int",
+            "Num PDU Out of Win Bytes Rst": "int",
+            "Num PDU Invalid Rst": "int",
+            "Num PDU Invalid Bytes Rst": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PDCP_UL_Cipher_Data_PDU": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkts": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "SRB Cipher Algorithm": "str",
+        "DRB Cipher Algorithm": "str",
+        "Num PDUs": "int",
+        "PDCPUL CIPH DATA": [
+          {
+            "Cfg Idx": "int",
+            "Mode": "str",
+            "SN Length": "str",
+            "Bearer ID": "int",
+            "Valid PDU": "str",
+            "PDU Size": "int",
+            "Logged Bytes": "int",
+            "Sub FN": "int",
+            "Sys FN": "int",
+            "SN": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PDCP_UL_Config": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Reason": "str",
+        "SRB Cipher Algorithm": "str",
+        "SRB Cipher Key Idx": "int",
+        "SRB Integrity Algorithm": "str",
+        "SRB Integrity Key Idx": "int",
+        "DRB Cipher Algorithm": "str",
+        "DRB Cipher Key Idx": "int",
+        "Array size": "int",
+        "Number of Released RBs": "int",
+        "Released RBs": [
+          {
+            "Released RB Cfg Index": "int"
+          }
+        ],
+        "Number of Added/Modified RBs": "int",
+        "Added/Modified RBs": "list",
+        "Number of active RBs": "int",
+        "Active RBs": "list"
+      }
+    ]
+  },
+  "LTE_PDCP_UL_Ctrl_PDU": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "RB Cfg Idx": "int",
+        "Mode": "str",
+        "SN Length (bit)": "int",
+        "Num PDUs": "int",
+        "PDCP DL Ctrl PDU": [
+          {
+            "PDU Size": "int",
+            "Logged Bytes": "int",
+            "System Frame Number": "int",
+            "Subframe Number": "int",
+            "type": "str",
+            "fms": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PDCP_UL_SRB_Integrity_Data_PDU": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "PDU Size": "int",
+    "Msg": "str"
+  },
+  "LTE_PDCP_UL_Stats": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Num RBs": "int",
+        "PDCPUL Errors": "int",
+        "RBs": [
+          {
+            "Rb Cfg Idx": "int",
+            "Mode": "str",
+            "PDCP Hdr Len": "int",
+            "Num RST": "int",
+            "Num Pdcp Ul Buffer Pkt": "int",
+            "Num Pdcp Ul Buffer Pkt Bytes": "int",
+            "Num Flow Ctrl Trigger": "int",
+            "Num Data PDU Tx": "int",
+            "Num Data PDU Tx Bytes": "int",
+            "Num Control PDU Tx": "int",
+            "Num Control PDU Tx Bytes": "int",
+            "Num Status Report": "int",
+            "Num ROHC Ctrl PDU Tx": "int",
+            "Num ROHC Fail": "int",
+            "Num Discard SDU": "int",
+            "Num Discard SDU Bytes": "int",
+            "Num PDU HO ReTx": "int",
+            "Num PDU HO ReTx Bytes": "int",
+            "Num Piggybk Rohc Feedbk Rcvd": "int",
+            "Num Rohc Pdu Drop Ho": "int",
+            "Num Rohc Pdu Drop Ho Bytes": "int",
+            "Num Flow Ctrl Trigger Rst": "int",
+            "Num Data PDU Tx Rst": "int",
+            "Num Data PDU Tx Bytes Rst": "int",
+            "Num Control PDU Tx Rst": "int",
+            "Num Control PDU Tx Bytes Rst": "int",
+            "Num Status Report Rst": "int",
+            "Num ROHC Ctrl PDU Tx Rst": "int",
+            "Num ROHC Fail Rst": "int",
+            "Num Discard SDU Rst": "int",
+            "Num Discard SDU Bytes Rst": "int",
+            "Num PDU HO ReTx Rst": "int",
+            "Num PDU HO ReTx Bytes Rst": "int",
+            "Num Piggybk Rohc Feedbk Rcvd Rst": "int",
+            "Num Rohc Pdu Drop Ho Rst": "int",
+            "Num Rohc Pdu Drop Ho Bytes Rst": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PHY_Connected_Mode_Intra_Freq_Meas": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Serving Cell Index": "str",
+    "E-ARFCN": "int",
+    "Serving Physical Cell ID": "int",
+    "Sub-frame Number": "int",
+    "RSRP(dBm)": "float",
+    "RSRQ(dB)": "float",
+    "Number of Neighbor Cells": "int",
+    "Number of Detected Cells": "int",
+    "Neighbor Cells": [
+      {
+        "Physical Cell ID": "int",
+        "RSRP(dBm)": "float",
+        "RSRQ(dB)": "float"
+      }
+    ],
+    "Detected Cells": "list"
+  },
+  "LTE_PHY_Connected_Mode_Neighbor_Measurement": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of SubPackets": "int",
+    "SubPackets": [
+      {
+        "SubPacket ID": "int",
+        "Version": "int",
+        "SubPacket Size": "int"
+      }
+    ]
+  },
+  "LTE_PHY_Idle_Neighbor_Cell_Meas": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of SubPackets": "int",
+    "SubPackets": [
+      {
+        "SubPacket ID": "int",
+        "Version": "int",
+        "SubPacket Size": "int",
+        "E-ARFCN": "int",
+        "Num Cells": "int",
+        "Num Rx Ant": "int",
+        "Deplexing Mode": "str",
+        "Neighbor Cells": [
+          {
+            "Cell ID": "int",
+            "CP Type": "str",
+            "Enabled Tx Antennas": "int",
+            "TTL Enabled": "str",
+            "FTL Enabled": "str"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PHY_Inter_RAT_Measurement": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime"
+  },
+  "LTE_PHY_PDCCH_Decoding_Result": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Records": "int",
+    "Subframe Number": "int",
+    "System Frame Number": "int",
+    "Band Width (MHz)": "int",
+    "Frame Structure": "str",
+    "Num eNB Antennas": "str",
+    "Demback Mode Select": "int",
+    "Carrier Index": "str",
+    "SF": [
+      {
+        "Subframe Offset": "int",
+        "CIF Configured": "str",
+        "Two bits CSI Configured": "str",
+        "Aperiodic SRS Configured": "str",
+        "Number of Hypothesis": "int",
+        "Hypothesis": [
+          {
+            "Payload": "str",
+            "Aggregation Level": "str",
+            "Candidate": "int",
+            "Search Space Type": "str",
+            "DCI Format": "str",
+            "Decode States": "str",
+            "Payload Size": "int",
+            "Tail Match": "str",
+            "Non Zero Symbol Mismatch Count": "int",
+            "Start CCE": "int",
+            "Non Zero Llr Count": "int",
+            "Normal": "int",
+            "Prune Status": "str",
+            "Energy Metric": "int",
+            "Norm Energy Metric": "float",
+            "Symbol Error Rate": "float"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PHY_PDCCH_PHICH_Indication_Report": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Duplex Mode": "int",
+    "Number of Records": "int",
+    "Records": [
+      {
+        "Num PDCCH Results": "int",
+        "PDCCH Timing SFN": "int",
+        "PDCCH Timing Sub-FN": "int",
+        "PHICH Included": "str",
+        "PHICH 1 Included": "str",
+        "PHICH Timing SFN": "int",
+        "PHICH Timing Sub-FN": "int",
+        "PHICH Value": "int",
+        "PHICH 1 Value": "int",
+        "PDCCH Info": "list"
+      }
+    ]
+  },
+  "LTE_PHY_PDSCH_Decoding_Result": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Serving Cell ID": "int",
+    "Starting Subframe Number": "int",
+    "Starting System Frame Number": "int",
+    "UE Category": "int",
+    "Num DL HARQ": "int",
+    "TM Mode": "int",
+    "Carrier Index": "str",
+    "Number of Records": "int",
+    "Records": [
+      {
+        "Subframe Offset": "int",
+        "PDSCH Channel ID": "int",
+        "HARQ ID": "int",
+        "RNTI Type": "str",
+        "System Information Msg Number": "int",
+        "System Information Mask": "int",
+        "HARQ Log Status": "str",
+        "Codeword Swap": "int",
+        "Number of Streams": "int",
+        "Streams": [
+          {
+            "Transport Block CRC": "str",
+            "NDI": "int",
+            "Code Block Size Plus": "int",
+            "Num Code Block Plus": "int",
+            "Max TDEC Iter": "int",
+            "Retransmission Number": "str",
+            "RVID": "int",
+            "Companding Stats": "str",
+            "HARQ Combining": "str",
+            "Decob TB CRC": "int",
+            "Num RE": "int",
+            "Codeword Index": "int",
+            "Energy Metrics": [
+              {
+                "Energy Metric": "int",
+                "Iteration Number": "int",
+                "Code Block CRC Pass": "str",
+                "Early Termination": "str",
+                "HARQ Combine Enable": "str",
+                "Deint Decode Bypass": "int"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_PHY_PDSCH_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Serving Cell ID": "int",
+    "System Frame Number": "int",
+    "Subframe Number": "int",
+    "PDSCH RNTIl ID": "int",
+    "PDSCH RNTI Type": "str",
+    "Number of Tx Antennas(M)": "int",
+    "Number of Rx Antennas(N)": "int",
+    "Spatial Rank": "str",
+    "RB Allocation Slot 0[0]": "str",
+    "RB Allocation Slot 0[1]": "str",
+    "RB Allocation Slot 1[0]": "str",
+    "RB Allocation Slot 1[1]": "str",
+    "Frequency Selective PMI": "str",
+    "PMI Index": "int",
+    "Transmission Scheme": "str",
+    "TBS 0": "int",
+    "MCS 0": "str",
+    "Traffic to Pilot Ratio": "float",
+    "TBS 1": "int",
+    "MCS 1": "str",
+    "Carrier Index": "str"
+  },
+  "LTE_PHY_PDSCH_Stat_Indication": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Records": "int",
+    "Records": [
+      {
+        "Subframe Num": "int",
+        "Frame Num": "int",
+        "Num RBs": "int",
+        "Num Layers": "int",
+        "Num Transport Blocks Present": "int",
+        "Serving Cell Index": "str",
+        "Transport Blocks": [
+          {
+            "HARQ ID": "int",
+            "RV": "int",
+            "NDI": "int",
+            "CRC Result": "str",
+            "RNTI Type": "str",
+            "TB Index": "int",
+            "Discarded reTx Present": "str",
+            "Did Recombining": "str",
+            "TB Size": "int",
+            "MCS": "int",
+            "Modulation Type": "str",
+            "Num RBs": "int",
+            "ACK/NACK Decision": "str"
+          }
+        ],
+        "PMCH ID": "int",
+        "Area ID": "int"
+      }
+    ]
+  },
+  "LTE_PHY_PUCCH_CSF": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Start System Sub-frame Number": "int",
+    "Start System Frame Number": "int",
+    "PUCCH Reporting Mode": "str",
+    "PUCCH Report Type": "str",
+    "Number of Subbands": "int",
+    "Rank Index": "str",
+    "CQI CW0": "int",
+    "CQI CW1": "int",
+    "Wideband PMI": "int",
+    "Carrier Index": "str",
+    "CSF Tx Mode": "str"
+  },
+  "LTE_PHY_PUCCH_Power_Control": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of Records": "int",
+    "Records": [
+      {
+        "SFN": "int",
+        "Sub-FN": "int",
+        "PUCCH Tx Power (dBm)": "int",
+        "DCI Format": "str",
+        "PUCCH Format": "str",
+        "N_HARQ": "int",
+        "TPC Command": "str",
+        "N_CQI": "int",
+        "DL Path Loss": "int",
+        "g(i)": "int",
+        "PUCCH Actual Tx Power": "int"
+      }
+    ]
+  },
+  "LTE_PHY_PUCCH_Tx_Report": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Serving Cell ID": "int",
+    "Number of Records": "int",
+    "Dispatch SFN SF": "int",
+    "Records": [
+      {
+        "Current SFN SF": "int",
+        "CQI Payload": "str",
+        "Format": "str",
+        "Start RB Slot 0": "int",
+        "Start RB Slot 1": "int",
+        "SRS Shorting for 2nd Slot": "str",
+        "UE SRS": "str",
+        "DMRS Seq Slot 0": "int",
+        "DMRS Seq Slot 1": "int",
+        "Cyclic Shift Seq": [
+          {
+            "Cyclic Shift Seq per Symbol": "int"
+          }
+        ],
+        "PUCCH Digital Gain (dB)": "int",
+        "PUCCH Tx Power (dBm)": "int",
+        "ACK Payload": "str",
+        "ACK Payload Length": "int",
+        "SR Bit FMT3": "int",
+        "Num DL Carriers": "int",
+        "n_1_pucch": "int",
+        "Ack Nak Index": "str",
+        "Ack Nak Late": "int",
+        "Csf Late": "int",
+        "Dropped Pucch": "int",
+        "Tx Resampler": "float"
+      }
+    ]
+  },
+  "LTE_PHY_PUSCH_CSF": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Start System Sub-frame Number": "int",
+    "Start System Frame Number": "int",
+    "PUSCH Reporting Mode": "str",
+    "Rank Index": "str",
+    "Csi Meas Set Index": "str",
+    "Number of Subbands": "int",
+    "WideBand CQI CW0": "int",
+    "WideBand CQI CW1": "int",
+    "SubBand Size (k)": "int",
+    "Single WB PMI": "int",
+    "Single MB PMI": "int",
+    "CSF Tx Mode": "str",
+    "Carrier Index": "str",
+    "Num CSIrs Ports": "int"
+  },
+  "LTE_PHY_PUSCH_Power_Control": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of Records": "int",
+    "Records": [
+      {
+        "SFN": "int",
+        "Sub-FN": "int",
+        "PUSCH Tx Power (dBm)": "int",
+        "DCI Format": "str",
+        "Tx Type": "str",
+        "Num RBs": "int",
+        "Transport Block Size": "int",
+        "DL Path Loss": "int",
+        "F(i)": "int",
+        "TPC": "int",
+        "PUSCH Actual Tx Power": "int"
+      }
+    ]
+  },
+  "LTE_PHY_PUSCH_Tx_Report": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Serving Cell ID": "int",
+    "Number of Records": "int",
+    "Dispatch SFN SF": "int",
+    "Records": [
+      {
+        "Current SFN SF": "int",
+        "Coding Rate Data": "float",
+        "ACK": "str",
+        "CQI": "str",
+        "RI": "str",
+        "Frequency Hopping": "str",
+        "Redund Ver": "int",
+        "Mirror Hopping": "int",
+        "Cyclic Shift of DMRS Symbols Slot 0 (Samples)": "int",
+        "Cyclic Shift of DMRS Symbols Slot 1 (Samples)": "int",
+        "DMRS Root Slot 0": "int",
+        "UE SRS": "str",
+        "DMRS Root Slot 1": "int",
+        "Start RB Slot 0": "int",
+        "Start RB Slot 1": "int",
+        "Num of RB": "int",
+        "PUSCH TB Size": "int",
+        "Rate Matched ACK Bits": "int",
+        "ACK Payload": "str",
+        "ACK/NAK Inp Length 0": "int",
+        "ACK/NAK Inp Length 1": "int",
+        "Num RI Bits NRI (bits)": "int",
+        "RI Payload": "str",
+        "Rate Matched RI Bits": "int",
+        "PUSCH Mod Order": "str",
+        "PUSCH Digital Gain (dB)": "int",
+        "SRS Occasion": "str",
+        "Re-tx Index": "str",
+        "PUSCH Tx Power (dBm)": "int",
+        "Num CQI Bits": "int",
+        "Rate Matched CQI Bits": "int",
+        "CQI Payload": "str",
+        "Tx Resampler": "int"
+      }
+    ]
+  },
+  "LTE_PHY_RLM_Report": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of Records": "int",
+    "Records": [
+      {
+        "System Frame Number": "int",
+        "Sub-frame Number": "int",
+        "Out of Sync BLER (%)": "float",
+        "In Sync BLER (%)": "float",
+        "Out of Sync Count": "int",
+        "In Sync Count": "int",
+        "T310 Timer Status": "int"
+      }
+    ]
+  },
+  "LTE_PHY_Serv_Cell_Measurement": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of SubPackets": "int",
+    "Subpackets": [
+      {
+        "SubPacket ID": "int",
+        "SubPacket Version": "int",
+        "SubPacket Size": "int",
+        "E-ARFCN": "int",
+        "Physical Cell ID": "int",
+        "Serving Cell Index": "str",
+        "Current SFN": "int",
+        "Current Subframe Number": "int",
+        "RSRP Rx[0]": "float",
+        "RSRP Rx[1]": "float",
+        "RSRP": "float",
+        "RSRQ Rx[0]": "float",
+        "RSRQ Rx[1]": "float",
+        "RSRQ": "float",
+        "RSSI Rx[0]": "float",
+        "RSSI Rx[1]": "float",
+        "RSSI": "float",
+        "FTL SNR Rx[0]": "float",
+        "FTL SNR Rx[1]": "float"
+      }
+    ]
+  },
+  "LTE_PHY_Serving_Cell_COM_Loop": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Carrier Index": "str",
+    "Cell ID": "int",
+    "Number of Records": "int",
+    "Records": [
+      {
+        "System Frame Number": "int",
+        "Subframe Number": "int",
+        "Enabled": "str",
+        "COM IIR Alpha": "float",
+        "COM Adjustment[0]": "float",
+        "COM Adjustment[1]": "float",
+        "COM Unwrap Base[0]": "float",
+        "COM Unwrap Base[1]": "float",
+        "COM Acc Stat[0]": "str",
+        "COM Acc Stat[1]": "str"
+      }
+    ]
+  },
+  "LTE_PHY_System_Scan_Results": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Candidates": "int",
+    "Candidates": [
+      {
+        "EARFCN": "int",
+        "Band": "int",
+        "Bandwidth (MHz)": "int",
+        "Energy (dBm/100KHz)": "int"
+      }
+    ]
+  },
+  "LTE_RLC_DL_AM_All_PDU": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of Subpackets": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "RB Cfg Idx": "int",
+        "RB Mode": "str",
+        "SN Length": "int",
+        "Enabled PDU Log Packets": "str",
+        "VR(R)": "int",
+        "VR(X)": "int",
+        "VR(MS)": "int",
+        "VR(H)": "int",
+        "Number of PDUs": "int",
+        "RLCDL PDUs": [
+          {
+            "PDU TYPE": "str",
+            "rb_cfg_idx": "int",
+            "Status": "str",
+            "sys_fn": "int",
+            "sub_fn": "int",
+            "pdu_bytes": "int",
+            "logged_bytes": "int",
+            "D/C LookAhead": "int",
+            "SN": "int",
+            "RF": "str",
+            "P": "str",
+            "FI": "str",
+            "E": "str"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_RLC_DL_Config_Log_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Reason": "str",
+        "Max Size RBs": "int",
+        "Number of Released RBs": "int",
+        "Released RBs": [
+          {
+            "Released RB Cfg Index": "int"
+          }
+        ],
+        "Number of Added/Modified RBs": "int",
+        "Added/Modified RBs": "list",
+        "Number of Active RBs": "int",
+        "Active RBs": "list"
+      }
+    ]
+  },
+  "LTE_RLC_DL_Stats": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Num RBs": "int",
+        "RLC PDCP Q Full Count": "int",
+        "RLCDL Error Count": "int",
+        "RBs": [
+          {
+            "Rb Cfg Idx": "int",
+            "Mode": "str",
+            "Num RST": "int",
+            "Num Data PDU": "int",
+            "Data PDU Bytes": "int",
+            "Num Status Rxed": "int",
+            "Status Rxed Bytes": "int",
+            "Num Invalid PDU": "int",
+            "Invalid PDU Bytes": "int",
+            "Num Retx PDU": "int",
+            "Retx PDU Bytes": "int",
+            "Num Dup PDU": "int",
+            "Dup PDU Bytes": "int",
+            "Num Dropped PDU": "int",
+            "Dropped PDU Bytes": "int",
+            "Num Dropped PDU FC": "int",
+            "Dropped PDU Bytes FC": "int",
+            "Num SDU": "int",
+            "Num SDU Bytes": "int",
+            "Num NonSeq SDU": "int",
+            "Num Ctrl PDU": "int",
+            "Num Complete NACK": "int",
+            "Num Segments NACK": "int",
+            "Num t_reorder Expired": "int",
+            "Num t_reorder Start": "int",
+            "Num Missed UM PDU": "int",
+            "Num Data PDU Rst": "int",
+            "Data PDU Bytes Rst": "int",
+            "Num Status Rxed Rst": "int",
+            "Status Rxed Bytes Rst": "int",
+            "Num Invalid PDU Rst": "int",
+            "Invalid PDU Bytes Rst": "int",
+            "Num Retx PDU Rst": "int",
+            "Retx PDU Bytes Rst": "int",
+            "Num Dup PDU Rst": "int",
+            "Dup PDU Bytes Rst": "int",
+            "Num Dropped PDU Rst": "int",
+            "Dropped PDU Bytes Rst": "int",
+            "Num Dropped PDU FC Rst": "int",
+            "Dropped PDU Bytes FC Rst": "int",
+            "Num SDU Rst": "int",
+            "Num SDU Bytes Rst": "int",
+            "Num NonSeq SDU Rst": "int",
+            "Num Ctrl PDU Rst": "int",
+            "Num Complete NACK Rst": "int",
+            "Num Segments NACK Rst": "int",
+            "Num t_reorder Expired Rst": "int",
+            "Num t_reorder Start Rst": "int",
+            "Num Missed UM PDU Rst": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_RLC_UL_AM_All_PDU": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of Subpackets": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "RB Cfg Idx": "int",
+        "RB Mode": "str",
+        "SN Length": "int",
+        "Enabled PDU Log Packets": "str",
+        "VT(A)": "int",
+        "VT(S)": "int",
+        "PDU Without Poll": "int",
+        "Byte Without Poll": "int",
+        "Poll SN": "int",
+        "Number of PDUs": "int",
+        "RLCUL PDUs": [
+          {
+            "PDU TYPE": "str",
+            "rb_cfg_idx": "int",
+            "sys_fn": "int",
+            "sub_fn": "int",
+            "pdu_bytes": "int",
+            "logged_bytes": "int",
+            "D/C LookAhead": "int",
+            "SN": "str",
+            "cpt": "str"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_RLC_UL_Config_Log_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num SubPkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Reason": "str",
+        "Max Size RBs": "int",
+        "Number of Released RBs": "int",
+        "Released RBs": [
+          {
+            "Released RB Cfg Index": "int"
+          }
+        ],
+        "Number of Added/Modified RBs": "int",
+        "Added/Modified RBs": "list",
+        "Number of Active RBs": "int",
+        "Active RBs": "list"
+      }
+    ]
+  },
+  "LTE_RLC_UL_Stats": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Subpkt": "int",
+    "Subpackets": [
+      {
+        "Subpacket ID": "int",
+        "Subpacket Version": "int",
+        "Subpacket Size": "int",
+        "Num RBs": "int",
+        "RLCUL Error Count": "int",
+        "RBs": [
+          {
+            "Rb Cfg Idx": "int",
+            "Mode": "str",
+            "Num RST": "int",
+            "Num New Data PDU": "int",
+            "Num New Data PDU Bytes": "int",
+            "Num SDU": "int",
+            "Num SDU Bytes": "int",
+            "Num Ctrl PDU Tx": "int",
+            "Num Ctrl PDU Bytes Tx": "int",
+            "Num Retx PDU": "int",
+            "Num Retx PDU Bytes": "int",
+            "Num Ctrl PDU Rx": "int",
+            "Num Complete NACK": "int",
+            "Num Segm NACK": "int",
+            "Num Invalid Ctrl PDU Rx": "int",
+            "Num Poll": "int",
+            "Num T Poll Retx Expiry": "int",
+            "Num New Data PDU Rst": "int",
+            "Num New Data PDU Bytes Rst": "int",
+            "Num SDU Rst": "int",
+            "Num SDU Bytes Rst": "int",
+            "Num Ctrl PDU Tx Rst": "int",
+            "Num Ctrl PDU Bytes Tx Rst": "int",
+            "Num Retx PDU Rst": "int",
+            "Num Retx PDU Bytes Rst": "int",
+            "Num Ctrl PDU Rx Rst": "int",
+            "Num Complete NACK Rst": "int",
+            "Num Segm NACK Rst": "int",
+            "Num Invalid Ctrl PDU Rx Rst": "int",
+            "Num Poll Rst": "int",
+            "Num T Poll Retx Expiry Rst": "int"
+          }
+        ]
+      }
+    ]
+  },
+  "LTE_RRC_CDRX_Events_Info": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Num Records": "int",
+    "Records": [
+      {
+        "SFN": "int",
+        "Sub-FN": "int",
+        "CDRX Event": "str",
+        "Internal Field Mask": "str"
+      }
+    ]
+  },
+  "LTE_RRC_MIB_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Physical Cell ID": "int",
+    "Freq": "int",
+    "SFN": "int",
+    "Number of Antenna": "int",
+    "DL BW": "str"
+  },
+  "LTE_RRC_OTA_Packet": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Pkt Version": "int",
+    "RRC Release Number": "int",
+    "Major/minor": "int",
+    "Radio Bearer ID": "int",
+    "Physical Cell ID": "int",
+    "Freq": "int",
+    "SysFrameNum/SubFrameNum": "int",
+    "PDU Number": "int",
+    "SIB Mask in SI": "int",
+    "Msg Length": "int",
+    "Msg": "str"
+  },
+  "LTE_RRC_Serv_Cell_Info": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Cell ID": "int",
+    "Downlink frequency": "int",
+    "Uplink frequency": "int",
+    "Downlink bandwidth": "str",
+    "Uplink bandwidth": "str",
+    "Cell Identity": "int",
+    "TAC": "int",
+    "Band Indicator": "int",
+    "MCC": "int",
+    "MNC Digit": "int",
+    "MNC": "int",
+    "Allowed Access": "int"
+  },
+  "Modem_debug_message": {
+    "type_id": "str",
+    "timestamp": "datetime",
+    "Version": "int",
+    "Number of parameters": "int",
+    "Timestamp": "datetime",
+    "Line of code": "int"
+  },
+  "UMTS_NAS_GMM_State": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "GMM State": "str",
+    "GMM Substate": "str",
+    "GMM Update Status": "str"
+  },
+  "UMTS_NAS_MM_State": {
+    "log_msg_len": "int",
+    "type_id": "str",
+    "timestamp": "datetime",
+    "MM State": "str",
+    "MM Substate": "str",
+    "MM Update Status": "str"
+  }
+}
