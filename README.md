@@ -251,4 +251,4 @@ If you use the dataset, please cite it as:
 }
 ```
 
-<img alt="BMBF logo" src="pics/bmbf-logo.png" height="200">
+![Project logos](pics/footer-logos.svg)
