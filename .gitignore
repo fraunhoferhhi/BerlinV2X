@@ -132,4 +132,7 @@ dmypy.json
 
 plots/**/*.pdf
 plots/**/*.png
-data/
+*.parquet
+*.zip
+*.pkl
+*.mi2log
