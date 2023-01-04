@@ -17,8 +17,6 @@ acquired with up to 4 cars over 3 days.
 The data enables thus a variety of different machine learning (ML) studies towards
 vehicle-to-anything (V2X) communication.
 
-[TOC]
-
 In the following, an overview of the data is provided.
 For a detailed description of the measurement campaign
 please refer to the [paper](https://arxiv.org/abs/2212.10343).
