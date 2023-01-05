@@ -1,0 +1,148 @@
+cff-version: 1.2.0
+message: If you use this dataset, please cite it using the preferred-citation information.
+type: dataset
+license: CC0-1.0
+title: Support code and documentation for the Berlin V2X dataset
+doi: 10.21227/8cj7-q373
+abstract: The Berlin V2X dataset offers high-resolution GPS-located wireless measurements
+  across diverse urban environments in the city of Berlin for both cellular and sidelink
+  radio access technologies, acquired with up to 4 cars over 3 days. The data enables
+  thus a variety of different ML studies towards vehicle-to-anything (V2X) communication.
+authors:
+- family-names: Hernangómez
+  given-names: Rodrigo
+  orcid: https://orcid.org/0000-0002-1284-4951
+  affiliation: Fraunhofer Heinrich Hertz Institute
+- family-names: Geuer
+  given-names: Philipp
+  affiliation: Ericsson Research
+- family-names: Palaios
+  given-names: Alexandros
+  affiliation: Ericsson Research
+- family-names: Schäufele
+  given-names: Daniel
+  affiliation: Fraunhofer Heinrich Hertz Institute
+- family-names: Watermann
+  given-names: Cara
+  affiliation: Ericsson Research
+- family-names: Taleb-Bouhemadi
+  given-names: Khawla
+  affiliation: Fraunhofer Heinrich Hertz Institute
+- family-names: Parvini
+  given-names: Mohammad
+  affiliation: Vodafone Chair, Technische Universität Dresden
+- family-names: Krause
+  given-names: Anton
+  affiliation: Vodafone Chair, Technische Universität Dresden
+- family-names: Partani
+  given-names: Sanket
+  affiliation: Technische Universität Kaiserslautern
+- family-names: Vielhaus
+  given-names: Christian
+  affiliation: Deutsche Telekom Chair, Technische Universität Dresden
+- family-names: Kasparick
+  given-names: Martin
+  affiliation: Fraunhofer Heinrich Hertz Institute
+- family-names: Külzer
+  given-names: Daniel F.
+  affiliation: BMW Group
+- family-names: Burmeister
+  given-names: Friedrich
+  affiliation: Vodafone Chair, Technische Universität Dresden
+- family-names: Stanczak
+  given-names: Slawomir
+  affiliation: Fraunhofer Heinrich Hertz Institute
+- family-names: Fettweis
+  given-names: Gerhard
+  affiliation: Vodafone Chair, Technische Universität Dresden
+- family-names: Schotten
+  given-names: Hans D.
+  affiliation: Technische Universität Kaiserslautern
+- family-names: Fitzek
+  given-names: Frank H. P.
+  affiliation: Deutsche Telekom Chair, Technische Universität Dresden
+preferred-citation:
+  type: article
+  title: 'Berlin V2X: A Machine Learning Dataset from Multiple Vehicles and Radio
+    Access Technologies'
+  abstract: The evolution of wireless communications into 6G and beyond is expected
+    to rely on new machine learning (ML)-based capabilities. These can enable proactive
+    decisions and actions from wireless-network components to sustain quality-of-service
+    (QoS) and user experience. Moreover, new use cases in the area of vehicular and
+    industrial communications will emerge. Specifically in the area of vehicle communication,
+    vehicle-to-everything (V2X) schemes will benefit strongly from such advances.
+    With this in mind, we have conducted a detailed measurement campaign with the
+    purpose of enabling a plethora of diverse ML-based studies. The resulting datasets
+    offer GPS-located wireless measurements across diverse urban environments for
+    both cellular (with two different operators) and sidelink radio access technologies,
+    thus enabling a variety of different studies towards V2X.
+  authors:
+  - family-names: Hernangómez
+    given-names: Rodrigo
+    orcid: https://orcid.org/0000-0002-1284-4951
+    affiliation: Fraunhofer Heinrich Hertz Institute
+  - family-names: Geuer
+    given-names: Philipp
+    affiliation: Ericsson Research
+  - family-names: Palaios
+    given-names: Alexandros
+    affiliation: Ericsson Research
+  - family-names: Schäufele
+    given-names: Daniel
+    affiliation: Fraunhofer Heinrich Hertz Institute
+  - family-names: Watermann
+    given-names: Cara
+    affiliation: Ericsson Research
+  - family-names: Taleb-Bouhemadi
+    given-names: Khawla
+    affiliation: Fraunhofer Heinrich Hertz Institute
+  - family-names: Parvini
+    given-names: Mohammad
+    affiliation: Vodafone Chair, Technische Universität Dresden
+  - family-names: Krause
+    given-names: Anton
+    affiliation: Vodafone Chair, Technische Universität Dresden
+  - family-names: Partani
+    given-names: Sanket
+    affiliation: Technische Universität Kaiserslautern
+  - family-names: Vielhaus
+    given-names: Christian
+    affiliation: Deutsche Telekom Chair, Technische Universität Dresden
+  - family-names: Kasparick
+    given-names: Martin
+    affiliation: Fraunhofer Heinrich Hertz Institute
+  - family-names: Külzer
+    given-names: Daniel F.
+    affiliation: BMW Group
+  - family-names: Burmeister
+    given-names: Friedrich
+    affiliation: Vodafone Chair, Technische Universität Dresden
+  - family-names: Stanczak
+    given-names: Slawomir
+    affiliation: Fraunhofer Heinrich Hertz Institute
+  - family-names: Fettweis
+    given-names: Gerhard
+    affiliation: Vodafone Chair, Technische Universität Dresden
+  - family-names: Schotten
+    given-names: Hans D.
+    affiliation: Technische Universität Kaiserslautern
+  - family-names: Fitzek
+    given-names: Frank H. P.
+    affiliation: Deutsche Telekom Chair, Technische Universität Dresden
+  year: '2022'
+  month: '12'
+  issue: arXiv:2212.10343
+  publisher:
+    name: arXiv
+  doi: 10.48550/arXiv.2212.10343
+  keywords:
+  - Computer Science - Artificial Intelligence
+  - Computer Science - Machine Learning
+  - Computer Science - Networking and Internet Architecture
+repository: https://ieee-dataport.org/open-access/berlin-v2x
+repository-code: https://github.com/fraunhoferhhi/BerlinV2X
+url: https://www.ai4mobile.org/en/
+identifiers:
+- description: Paper DOI
+  type: doi
+  value: 10.48550/arXiv.2212.10343
