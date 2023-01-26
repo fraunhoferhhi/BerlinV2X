@@ -34,4 +34,6 @@ This extracts the messages from the mi2log files into
 pickled dataframes with minimal processing.
 2. [pkl_to_parquet.py](pkl_to_parquet.py):
 Conversion to parquet after exploding the pickled dataframe.
+   - Due to its JSON structure, some messages cannot be converted to parquet with this script and require ad-hoc parsing.
+   Message-specific parsing scripts can be found under [messages](messages).
 3. [merge_mi.py](merge_mi.py): Merging per device.
