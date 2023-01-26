@@ -82,69 +82,6 @@
       }
     ]
   },
-  "LTE_MAC_Rach_Trigger": {
-    "log_msg_len": "int",
-    "type_id": "str",
-    "timestamp": "datetime",
-    "Version": "int",
-    "Number of Subpackets": "int",
-    "Subpackets": [
-      {
-        "Subpacket ID": "int",
-        "Subpacket Version": "int",
-        "Subpacket Size": "int",
-        "Preamble initial power (dB)": "int",
-        "Power ramping step (dB)": "int",
-        "RA index1": "int",
-        "RA index2": "int",
-        "Preamble trans max": "int",
-        "Contention resolution timer (ms)": "int",
-        "Message size Group_A": "int",
-        "Power offset Group_B": "int",
-        "PMax (dBm)": "int",
-        "Delta preamble Msg3": "int",
-        "PRACH config": "int",
-        "CS zone length": "int",
-        "Root seq index": "int",
-        "PRACH Freq Offset": "int",
-        "Preamble Format": "int",
-        "High speed flag": "int",
-        "Max retx Msg3": "int",
-        "RA rsp win size": "int"
-      }
-    ]
-  },
-  "LTE_MAC_UL_Buffer_Status_Internal": {
-    "log_msg_len": "int",
-    "type_id": "str",
-    "timestamp": "datetime",
-    "Version": "int",
-    "Num SubPkt": "int",
-    "Subpackets": [
-      {
-        "SubPacket ID": "str",
-        "Version": "int",
-        "SubPacket Size": "int",
-        "Num Samples": "int",
-        "Samples": [
-          {
-            "Sub FN": "int",
-            "Sys FN": "int",
-            "Number of active LCID": "int",
-            "LCIDs": [
-              {
-                "Ld Id": "int",
-                "Priority": "int",
-                "New bytes": "int",
-                "Retx bytes": "int",
-                "Ctrl bytes": "int"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "LTE_MAC_UL_Transport_Block": {
     "log_msg_len": "int",
     "type_id": "str",
@@ -171,29 +108,6 @@
             "HDR LEN": "int"
           }
         ]
-      }
-    ]
-  },
-  "LTE_MAC_UL_Tx_Statistics": {
-    "log_msg_len": "int",
-    "type_id": "str",
-    "timestamp": "datetime",
-    "Version": "int",
-    "Num SubPkt": "int",
-    "Subpackets": [
-      {
-        "SubPacket ID": "str",
-        "Version": "int",
-        "SubPacket Size": "int",
-        "Sample": {
-          "Number of samples": "int",
-          "Number of padding BSR": "int",
-          "Number of regular BSR": "int",
-          "Number of periodic BSR": "int",
-          "Number of cancel BSR": "int",
-          "Grant received": "int",
-          "Grant utilized": "int"
-        }
       }
     ]
   },
@@ -656,49 +570,6 @@
     "log_msg_len": "int",
     "type_id": "str",
     "timestamp": "datetime"
-  },
-  "LTE_PHY_PDCCH_Decoding_Result": {
-    "log_msg_len": "int",
-    "type_id": "str",
-    "timestamp": "datetime",
-    "Version": "int",
-    "Num Records": "int",
-    "Subframe Number": "int",
-    "System Frame Number": "int",
-    "Band Width (MHz)": "int",
-    "Frame Structure": "str",
-    "Num eNB Antennas": "str",
-    "Demback Mode Select": "int",
-    "Carrier Index": "str",
-    "SF": [
-      {
-        "Subframe Offset": "int",
-        "CIF Configured": "str",
-        "Two bits CSI Configured": "str",
-        "Aperiodic SRS Configured": "str",
-        "Number of Hypothesis": "int",
-        "Hypothesis": [
-          {
-            "Payload": "str",
-            "Aggregation Level": "str",
-            "Candidate": "int",
-            "Search Space Type": "str",
-            "DCI Format": "str",
-            "Decode States": "str",
-            "Payload Size": "int",
-            "Tail Match": "str",
-            "Non Zero Symbol Mismatch Count": "int",
-            "Start CCE": "int",
-            "Non Zero Llr Count": "int",
-            "Normal": "int",
-            "Prune Status": "str",
-            "Energy Metric": "int",
-            "Norm Energy Metric": "float",
-            "Symbol Error Rate": "float"
-          }
-        ]
-      }
-    ]
   },
   "LTE_PHY_PDCCH_PHICH_Indication_Report": {
     "log_msg_len": "int",

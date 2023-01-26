@@ -27,7 +27,6 @@ def main(file=None):
 
         print(f'reading file {file}')
         df = pd.read_pickle(in_root/file)
-        ### TODO START OF BORROWED BLOCK FROM KHAWLA ###
         columns = [c for c in df.columns if type(df[c].iloc[0]) is list]
         if columns:
             print(f"Columns to explode: {columns}")
@@ -42,7 +41,6 @@ def main(file=None):
             df = rename_duplicated_columns(df)
             df.to_parquet(out_path, compression="gzip")
             print(f"Saved as {out_path}")
-        ### TODO END OF BORROWED BLOCK FROM KHAWLA ###
         except (ArrowInvalid, ArrowTypeError) as ai:
             print(f"{out_path.stem} cannot be saved as parquet. The following exception occurred:")
             print(ai)
