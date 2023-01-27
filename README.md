@@ -55,7 +55,7 @@ All data sources are also provided in high-resolution for:
 - Iperf traces - per car (x4) for downlink measurements + server (x1) for uplink measurements.
 - TCPdump data for the sidelink - per car (x4).
 - GPS data - per car (x4).
-- MobileInsight traces - per car (x4) and message type (x40 approx.).
+- MobileInsight traces - per car (x4) and message type (x50, check directory [mi](mi) for details).
   - The complete messages are zipped per device. The following message types, which have been merged into the cellular dataframe, are also provided unzipped for a quick access:
     - LTE_PHY_Serv_Cell_Measurement
     - LTE_RRC_Serv_Cell_Info
