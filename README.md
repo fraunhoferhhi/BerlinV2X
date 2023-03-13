@@ -67,9 +67,9 @@ All data sources are also provided in high-resolution for:
 | Cellular         | DME               | [MobileInsight][mi] | 10 ms             | PHY: SNR, RSRP, RSRQ, RSSI                                                                       |
 |                  |                   |                     | 20 ms             | PDSCH/PUSCH: Assigned RBs, TB Size, DL MCS, UL Tx Power                                          |
 |                  |                   |                     | Event-based       | RRC: Cell Identity, DL/UL frequency, DL/UL bandwidth                                             |
-|                  |                   | [ping]              | Event-based       | Jitter, delay                                                                                    |
-|                  |                   | [iperf]             | 1 s               | DL datarate                                                                                      |
-|                  | Server            | [iperf]             | 1 s               | UL Datarate                                                                                      |
+|                  |                   | [ping]              | 1 s               | Delay                                                                                            |
+|                  |                   | [iperf]             | 1 s               | DL Datarate, jitter                                                                              |
+|                  | Server            | [iperf]             | 1 s               | UL Datarate, jitter                                                                              |
 | Sidelink         | SDR UE            | [tcpdump]           | Event-based       | SNR, RSRP, RSRQ, RSSI, Noise Power, Rx Power, Rx Gain                                            |
 | Position         | GPS               |                     | 1 s               | Latitude, Longitude, Altitude, Velocity, Heading                                                 |
 | Side information | Internet database | [HERE API][here]    | 5 min             | Traffic Jam Factor, Traffic Street Name, Traffic Distance                                        |
