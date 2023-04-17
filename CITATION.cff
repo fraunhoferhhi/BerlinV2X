@@ -71,11 +71,16 @@ preferred-citation:
     (QoS) and user experience. Moreover, new use cases in the area of vehicular and
     industrial communications will emerge. Specifically in the area of vehicle communication,
     vehicle-to-everything (V2X) schemes will benefit strongly from such advances.
-    With this in mind, we have conducted a detailed measurement campaign with the
-    purpose of enabling a plethora of diverse ML-based studies. The resulting datasets
+    With this in mind, we have conducted a detailed measurement campaign that paves
+    the way to a plethora of diverse ML-based studies. The resulting datasets
     offer GPS-located wireless measurements across diverse urban environments for
     both cellular (with two different operators) and sidelink radio access technologies,
     thus enabling a variety of different studies towards V2X.
+    The datasets are labeled and sampled with a high time resolution.
+    Furthermore, we make the data publicly available with all the necessary information
+    to support the onboarding of new researchers. We provide an initial analysis of
+    the data showing some of the challenges that ML needs to overcome and the features
+    that ML can leverage, as well as some hints at potential research studies.
   authors:
   - family-names: Hernangómez
     given-names: Rodrigo
@@ -117,23 +122,22 @@ preferred-citation:
   - family-names: Burmeister
     given-names: Friedrich
     affiliation: Vodafone Chair, Technische Universität Dresden
-  - family-names: Stanczak
-    given-names: Slawomir
-    affiliation: Fraunhofer Heinrich Hertz Institute
-  - family-names: Fettweis
-    given-names: Gerhard
-    affiliation: Vodafone Chair, Technische Universität Dresden
-  - family-names: Schotten
-    given-names: Hans D.
-    affiliation: Technische Universität Kaiserslautern
   - family-names: Fitzek
     given-names: Frank H. P.
     affiliation: Deutsche Telekom Chair, Technische Universität Dresden
-  year: '2022'
-  month: '12'
-  issue: arXiv:2212.10343
-  publisher:
-    name: arXiv
+  - family-names: Schotten
+    given-names: Hans D.
+    affiliation: Technische Universität Kaiserslautern
+  - family-names: Fettweis
+    given-names: Gerhard
+    affiliation: Vodafone Chair, Technische Universität Dresden
+  - family-names: Stanczak
+    given-names: Slawomir
+    affiliation: Fraunhofer Heinrich Hertz Institute
+  year: '2023'
+  month: '06'
+  journal: 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)
+  address: Florence, Italy
   doi: 10.48550/arXiv.2212.10343
   keywords:
   - Computer Science - Artificial Intelligence

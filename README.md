@@ -234,20 +234,16 @@ More information at [ai4mobile.org](https://www.ai4mobile.org/en/).
 If you use the dataset, please cite it as:
 
 ```bibtex
-@article{hernangomez2022berlin,
-    title = {Berlin {{V2X}}: {{A Machine Learning Dataset}} from {{Multiple Vehicles}} and {{Radio Access Technologies}}},
-    shorttitle = {Berlin {{V2X}}},
-    author = {Hernang{\'o}mez, Rodrigo and Geuer, Philipp and Palaios, Alexandros and Sch{\"a}ufele, Daniel and Watermann, Cara and {Taleb-Bouhemadi}, Khawla and Parvini, Mohammad and Krause, Anton and Partani, Sanket and Vielhaus, Christian and Kasparick, Martin and K{\"u}lzer, Daniel F. and Burmeister, Friedrich and Sta{\'n}czak, S{\l}awomir and Fettweis, Gerhard and Schotten, Hans D. and Fitzek, Frank H. P.},
-    year = {2022},
-    month = dec,
-    number = {arXiv:2212.10343},
-    eprint = {2212.10343},
-    eprinttype = {arxiv},
-    primaryclass = {cs},
-    publisher = {{arXiv}},
-    doi = {10.48550/arXiv.2212.10343},
-    archiveprefix = {arXiv},
-    keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Networking and Internet Architecture}
+@article{hernangomez2023berlin,
+  title = {Berlin {{V2X}}: {{A Machine Learning Dataset}} from {{Multiple Vehicles}} and {{Radio Access Technologies}}},
+  shorttitle = {Berlin {{V2X}}},
+  author = {Hernang{\'o}mez, Rodrigo and Geuer, Philipp and Palaios, Alexandros and Sch{\"a}ufele, Daniel and Watermann, Cara and {Taleb-Bouhemadi}, Khawla and Parvini, Mohammad and Krause, Anton and Partani, Sanket and Vielhaus, Christian and Kasparick, Martin and K{\"u}lzer, Daniel F. and Burmeister, Friedrich and Fitzek, Frank H. P. and Schotten, Hans D. and Fettweis, Gerhard and Sta{\'n}czak, S{\l}awomir},
+  year = {2023},
+  month = jun,
+  journal = {2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)},
+  address = {{Florence, Italy}},
+  doi = {10.48550/arXiv.2212.10343},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Networking and Internet Architecture}
 }
 ```
 
