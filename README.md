@@ -62,18 +62,21 @@ All data sources are also provided in high-resolution for:
     - LTE_PHY_PDSCH_Stat_Indication
     - LTE_PHY_PUSCH_Tx_Report
 
-| Data category    | Source            | Tool                | Sampling interval | Features                                                                                         |
-|------------------|-------------------|---------------------|-------------------|--------------------------------------------------------------------------------------------------|
-| Cellular         | DME               | [MobileInsight][mi] | 10 ms             | PHY: SNR, RSRP, RSRQ, RSSI                                                                       |
-|                  |                   |                     | 20 ms             | PDSCH/PUSCH: Assigned RBs, TB Size, DL MCS, UL Tx Power                                          |
-|                  |                   |                     | Event-based       | RRC: Cell Identity, DL/UL frequency, DL/UL bandwidth                                             |
-|                  |                   | [ping]              | 1 s               | Delay                                                                                            |
-|                  |                   | [iperf]             | 1 s               | DL Datarate, jitter                                                                              |
-|                  | Server            | [iperf]             | 1 s               | UL Datarate, jitter                                                                              |
-| Sidelink         | SDR UE            | [tcpdump]           | Event-based       | SNR, RSRP, RSRQ, RSSI, Noise Power, Rx Power, Rx Gain                                            |
-| Position         | GPS               |                     | 1 s               | Latitude, Longitude, Altitude, Velocity, Heading                                                 |
-| Side information | Internet database | [HERE API][here]    | 5 min             | Traffic Jam Factor, Traffic Street Name, Traffic Distance                                        |
-|                  |                   | [DarkSky][darksky]  | 1 hour            | Cloud cover, Humidity, Precipitation Intensity \& Probability, Temperature, Pressure, Wind Speed |
+| Data category      | Source            | Tool                | Sampling interval | Features                                                                                         |
+|--------------------|-------------------|---------------------|-------------------|--------------------------------------------------------------------------------------------------|
+| Quality of Service | DME               | [ping]              | 1 s               | Delay                                                                                            |
+|                    |                   | [iperf]             | 1 s               | DL Datarate, jitter                                                                              |
+|                    | Server            | [iperf]             | 1 s               | UL Datarate, jitter                                                                              |
+| Cellular           | DME               | [MobileInsight][mi] | 10 ms             | PHY: SNR, RSRP, RSRQ, RSSI                                                                       |
+|                    |                   |                     | 20 ms             | PDSCH/PUSCH: Assigned RBs, TB Size, DL MCS, UL Tx Power                                          |
+|                    |                   |                     | Event-based       | RRC: Cell Identity, DL/UL frequency, DL/UL bandwidth                                             |
+| Sidelink           | SDR UE            | [tcpdump]           | Event-based       | SNR, RSRP, RSRQ, RSSI, Noise Power, Rx Power, Rx Gain                                            |
+| Position           | GPS               |                     | 1 s               | Latitude, Longitude, Altitude, Velocity, Heading                                                 |
+| Side information   | Internet database | [HERE API][here]    | 5 min             | Traffic Jam Factor, Traffic Street Name, Traffic Distance                                        |
+|                    |                   | [DarkSky][darksky]  | 1 hour            | Cloud cover, Humidity, Precipitation Intensity \& Probability, Temperature, Pressure, Wind Speed |
+| Metadata           |                   |                     |                   | Scenario, operator, drive type, target datarate, direction                                       |  
+
+
 
 For merging and preprocessing details
 check the notebooks in the [preprocess](preprocess) folder.
@@ -120,7 +123,8 @@ in the merged cellular dataframe:
 - LTE_PHY_PUSCH_Tx_Report
 
 The merged data is based in the signal strength and quality
-PHY Serving Cell information for both primary and secondary cells.
+PHY Serving Cell information for both primary and secondary cells
+(marked as `PCell`and `SCell`, respectively).
 This has been enriched with RRC information on the cells
 and the aggregated number of allocated
 resource blocks and transport block size in downlink and uplink
@@ -209,6 +213,13 @@ The information about Cloud cover, Humidity, Precipitation Intensity & Probabili
 Time granularity is 1 hour and location granularity is 0.01 degrees in both latitude and longitude.
 
 # Reference
+
+## ITU AI/ML in 5G Challenge
+
+The Berlin V2X dataset forms the problem statement
+_"Multi-environment automotive QoS prediction using AI/ML"_ at
+[ITU AI/ML in 5G Challenge 2023](https://aiforgood.itu.int/about-ai-for-good/aiml-in-5g-challenge/).
+Read more on [ml5g-2023](./ml5g-2023).
 
 ## Examples
 
