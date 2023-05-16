@@ -156,5 +156,6 @@ scenario,manual,metadata/berlin_protocol.csv,object,0,100,0,,,,,,,,
 drive_mode,manual,metadata/berlin_protocol.csv,object,0,100,0,,,,,,,,
 target_datarate,manual,metadata/berlin_protocol.csv,int64,0,100,0,207434,134238549.1,150230287.2,400000,400000,75000000,350000000,350000000
 direction,manual,metadata/berlin_protocol.csv,object,0,100,0,,,,,,,,
+measured_qos,manual,metadata/berlin_protocol.csv,object,0,100,0,,,,,,,,
 operator,manual,metadata/berlin_protocol.csv,int64,0,100,0,207434,1.500785792,0.500000588,1,1,2,2,2
 timestamp,,index,"datetime64[ns, Europe/Berlin]",0,100,0,207434,,,2021-06-22 09:49:00+02:00,,,,2021-06-24 18:59:59+02:00
