@@ -4,6 +4,9 @@ The Berlin V2X dataset forms the problem statement
 _"Multi-environment automotive QoS prediction using AI/ML"_ at
 [ITU AI/ML in 5G Challenge 2023](https://aiforgood.itu.int/about-ai-for-good/aiml-in-5g-challenge/).
 
+For inquiries about the challenge, contact us at
+**ml5g-challenge@ai4mobile.org**.
+
 ## Description
 
 The challenge consists in the prediction of QoS for the cellular communication in the
@@ -57,4 +60,13 @@ The participants will submit the following in the
 
 ## Timeline
 
-tbd
+- **Competition Phase** 
+  - Registration from **23 May 2023** to **31 August 2023**
+  - Submission deadline **8 September 2023**
+  - Evaluation of solutions: **October 2023**
+  - Final Ranking: **3 November 2023**
+  - Preparation of reports: **October – November 2023**
+- **Evaluation Phase** 
+  - **November 2023 –** Judges Panel evaluates the best solutions from Competition Phase
+  - **28 – 30 November 2023** – Best solutions pitch in a 3-day event to determine the finalists
+  - **13 December 2023 –** Grand Challenge Finale
