@@ -41,7 +41,8 @@ and the train and test sets consist of the data from orpeator 1 and operator 2, 
 
 ### Submission
 
-The participants will submit the following in the Problem Statement Portal:
+The participants will submit the following in the
+[ITU's challenge platform](https://challenge.aiforgood.itu.int/match/matchitem/80):
 
 - Their code implementation.
 - A CSV file (see the reference [scores.csv](./scores.csv)) containing:
