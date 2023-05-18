@@ -39,8 +39,8 @@ $R^2(y, \hat{y}) = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} 
 - A qualitative score depending on the problem setup, e.g., the decisions on the QoS parameter and the train/test split.
 
 We provide a [reference notebook](./reference_notebook.ipynb)
-were the predicted QoS parameters is downlink datarate
-and the train and test sets consist of the data from orpeator 1 and operator 2, respectively.
+where we have selected downlink datarate as the QoS parameter to predict
+and the train and test sets consist of the data from operator 1 and operator 2, respectively.
 
 ### Submission
 
@@ -63,9 +63,8 @@ The participants will submit the following in the
 - **Competition Phase** 
   - Registration from **23 May 2023** to **31 August 2023**
   - Submission deadline **8 September 2023**
-  - Evaluation of solutions: **October 2023**
-  - Final Ranking: **3 November 2023**
-  - Preparation of reports: **October – November 2023**
+  - Evaluation of solutions: **31 October 2023**
+
 - **Evaluation Phase** 
   - **November 2023 –** Judges Panel evaluates the best solutions from Competition Phase
   - **28 – 30 November 2023** – Best solutions pitch in a 3-day event to determine the finalists
