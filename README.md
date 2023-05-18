@@ -5,6 +5,8 @@
 
 [Download the dataset on IEEE Dataport][dataport]
 
+[Read about the problem statement for ITU AI/ML in 5G Challenge 2023](./ml5g-2023)
+
 [dataport]: https://ieee-dataport.org/open-access/berlin-v2x
 [numpy]: https://numpy.org/
 [pandas]: https://pandas.pydata.org/
