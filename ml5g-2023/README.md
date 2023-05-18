@@ -34,7 +34,7 @@ Feature engineering will be evaluated. As an example, if two models attain simil
 The final score will be computed as the weighted mean of:
 
 - The coefficient of determination $R^2$ of the model on the test data. The $R^2$ score is computed in most ML/DL libraries as 
-$R^2(y, \hat{y}) = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}$
+	- $`R^2(y, \hat{y}) = 1 - \frac{\sum_{i} (y_i - \hat{y}_i)^2}{\sum_{i} (y_i - \bar{y})^2},\;\bar{y}=\frac{1}{n}\sum_{i}y_i`$
 - The discarded features. More specifically, since we consider the dataset to contain 84 useful features, this partial score equals `84 - used_features`.
 - A qualitative score depending on the problem setup, e.g., the decisions on the QoS parameter and the train/test split.
 
