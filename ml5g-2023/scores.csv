@@ -1,0 +1,2 @@
+team_id,predicted_qos,train_set,test_set,r2_score,used_features
+REFERENCE,downlink datarate,operator 1,operator 2,0.8066327585930476,39
