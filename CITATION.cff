@@ -62,7 +62,7 @@ authors:
   given-names: Frank H. P.
   affiliation: Deutsche Telekom Chair, Technische Universität Dresden
 preferred-citation:
-  type: inproceedings
+  type: conference-paper
   title: 'Berlin V2X: A Machine Learning Dataset from Multiple Vehicles and Radio
     Access Technologies'
   abstract: The evolution of wireless communications into 6G and beyond is expected
