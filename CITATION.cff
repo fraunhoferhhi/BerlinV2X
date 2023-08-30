@@ -140,11 +140,11 @@ preferred-citation:
   end: 5
   collection-title: "2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)"
   conference:
-    - name: 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)
-      city: Florence
-      country: Italy
-      date-start: 2023-06-20
-      date-end: 2023-06-23
+  - name: 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)
+    city: Florence
+    country: Italy
+    date-start: 2023-06-20
+    date-end: 2023-06-23
   issn: 2577-2465
   doi: 10.1109/VTC2023-Spring57618.2023.10200750
   copyright: All rights reserved
