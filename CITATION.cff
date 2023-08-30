@@ -62,7 +62,7 @@ authors:
   given-names: Frank H. P.
   affiliation: Deutsche Telekom Chair, Technische Universität Dresden
 preferred-citation:
-  type: article
+  type: inproceedings
   title: 'Berlin V2X: A Machine Learning Dataset from Multiple Vehicles and Radio
     Access Technologies'
   abstract: The evolution of wireless communications into 6G and beyond is expected
@@ -136,9 +136,12 @@ preferred-citation:
     affiliation: Fraunhofer Heinrich Hertz Institute
   year: '2023'
   month: '06'
-  journal: 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)
+  pages: '1--5'
+  booktitle: 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)
   address: Florence, Italy
-  doi: 10.48550/arXiv.2212.10343
+  issn: 2577-2465
+  doi: 10.1109/VTC2023-Spring57618.2023.10200750
+  copyright: All rights reserved
   keywords:
   - Computer Science - Artificial Intelligence
   - Computer Science - Machine Learning
@@ -149,4 +152,4 @@ url: https://www.ai4mobile.org/en/
 identifiers:
 - description: Paper DOI
   type: doi
-  value: 10.48550/arXiv.2212.10343
+  value: 10.1109/VTC2023-Spring57618.2023.10200750

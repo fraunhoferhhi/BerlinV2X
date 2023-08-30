@@ -247,16 +247,18 @@ More information at [ai4mobile.org](https://www.ai4mobile.org/en/).
 If you use the dataset, please cite it as:
 
 ```bibtex
-@article{hernangomez2023berlin,
+@inproceedings{hernangomez2023berlin,
   title = {Berlin {{V2X}}: {{A Machine Learning Dataset}} from {{Multiple Vehicles}} and {{Radio Access Technologies}}},
   shorttitle = {Berlin {{V2X}}},
+  booktitle = {2023 {{IEEE}} 97th {{Vehicular Technology Conference}} ({{VTC2023-Spring}})},
   author = {Hernang{\'o}mez, Rodrigo and Geuer, Philipp and Palaios, Alexandros and Sch{\"a}ufele, Daniel and Watermann, Cara and {Taleb-Bouhemadi}, Khawla and Parvini, Mohammad and Krause, Anton and Partani, Sanket and Vielhaus, Christian and Kasparick, Martin and K{\"u}lzer, Daniel F. and Burmeister, Friedrich and Fitzek, Frank H. P. and Schotten, Hans D. and Fettweis, Gerhard and Sta{\'n}czak, S{\l}awomir},
   year = {2023},
   month = jun,
-  journal = {2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)},
+  pages = {1--5},
   address = {{Florence, Italy}},
-  doi = {10.48550/arXiv.2212.10343},
-  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Networking and Internet Architecture}
+  issn = {2577-2465},
+  doi = {10.1109/VTC2023-Spring57618.2023.10200750},
+  copyright = {All rights reserved},
 }
 ```
 
